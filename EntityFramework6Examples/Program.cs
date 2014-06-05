@@ -17,6 +17,8 @@ namespace EntityFramework6Examples
          Console.ReadLine();
       }
 
+      // NOTE: these are fire-and-forget async tasks. this is NOT best practice and you should be handling errors gracefully
+      // this was just meant to be a quick-n-dirty illustration
       public async static void RunQueries()
       {
          using ( var context = new SalesContext() )
